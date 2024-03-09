@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background: black;
+        }
+        .parent{
+            width: 600px;
+            height: 500px;
+           
+            margin: 200px auto;
+            position: relative;
+            display: flex;
+            gap: 60px;
+        }
+.outer{
+    width: 150px;
+    height: 50px;
+    border: 3px solid #6B73FF;
+    background-image: linear-gradient( 135deg, #FFF720 10%, #3CD500 100%);
+    position: relative;
+    transition: 1s;
+    border-radius: 10px;
+
+}
+.inner{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: 1s;
+  
+}
+.text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    border-radius: 10px;
+}
+.outer:hover .inner{
+    transform: scaleX(0);
+}
+
+.outer1{
+    width: 150px;
+    height: 50px;
+    border: 3px solid orange;
+    margin-top: 300px;
+    background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
+    position: relative;
+    transition: 1s;
+    border-radius: 10px;
+
+}
+.inner1{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: right;
+    border-radius: 10px;
+    transition: 1s;
+  
+}
+.text1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    border-radius: 10px;
+}
+.outer1:hover .inner1{
+    transform: scaleX(0);
+}
+
+
+.outer2{
+    width: 150px;
+    height: 50px;
+    border: 3px solid palevioletred;
+    margin-top: 180px;
+   
+    background-image: linear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%);
+    position: relative;
+    transition: 1s;
+    border-radius: 10px;
+
+}
+.inner2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    border-radius: 10px;
+    transition: 1s;
+  
+}
+.text2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    border-radius: 10px;
+}
+.outer2:hover .inner2{
+    transform: scaleX(0);
+}
+
+.outer3{
+    width: 150px;
+    height: 50px;
+    border: 3px solid cornflowerblue;
+  
+    background-image: linear-gradient( 135deg, #FFE985 10%, #FA742B 100%);    position: relative;
+    transition: 1s;
+    border-radius: 10px;
+
+}
+.inner3{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top;
+    border-radius: 10px;
+    transition: 1s;
+  
+}
+.text3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    border-radius: 10px;
+}
+.outer3:hover .inner3{
+    transform: scaleY(0);
+}
+
+.outer4{
+    width: 150px;
+    height: 50px;
+    border: 3px solid olive;
+   margin-top: 300px;
+    background-image: linear-gradient( 135deg, #6B73FF 10%, #000DFF 100%); position: relative;
+    transition: 1s;
+    border-radius: 10px;
+
+}
+.inner4{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin:bottom;
+    border-radius: 10px;
+    transition: 1s;
+  
+}
+.text4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    border-radius: 10px;
+}
+.outer4:hover .inner4{
+    transform: scaleY(0);
+}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="text">Hover  Me</div>
+    </div>
+
+    <div class="outer1">
+        <div class="inner1"></div>
+        <div class="text1">Hover  Me</div>
+    </div>
+</div>
+<div>
+    <div class="outer2">
+        <div class="inner2"></div>
+        <div class="text2">Hover  Me</div>
+    </div>
+</div>
+<div>
+    <div class="outer3">
+        <div class="inner3"></div>
+        <div class="text3">Hover  Me</div>
+    </div>
+    <div class="outer4">
+        <div class="inner4"></div>
+        <div class="text4">Hover  Me</div>
+    </div>
+</div>
+</div>
+</body>
+</html>
